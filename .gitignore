@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+secrets.json
+.vscode
+
 # Distribution / packaging
 .Python
 build/
