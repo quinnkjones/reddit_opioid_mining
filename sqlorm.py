@@ -8,10 +8,11 @@ class Reddit_Self_Post(Base):
     pid = Column(Integer,primary_key=True)
     post_id = Column(String)
     user_name = Column(String)
+    title = Column(String)
     post_text = Column(String)
 
     def repr(self): 
-        return 'post {} by {} contains {}'.format(self.post_id,self.user_name,self.post_text)
+        return 'post {} by {} contains {}'.format(self.title,self.user_name,self.post_text)
 
 class Reddit_Comment(Base):
     __tablename__='comments'
